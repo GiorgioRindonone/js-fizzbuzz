@@ -14,22 +14,16 @@
 }
 
 #box {
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding:  40px 40px;
+  padding:  20px 40px;
   border: 3px lightgrey solid;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.9);
   height: 70%;
   width: 40%;
   overflow: auto;
-  overflow: auto;
-  background-position:  top;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 body {
@@ -39,4 +33,13 @@ body {
 
 h1, p, h2, li{
   color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0px 0px;
+}
+
+li{
+  text-align: center;
 }
