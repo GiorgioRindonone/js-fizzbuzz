@@ -1,0 +1,53 @@
+var listanum = document.getElementById("lista");
+
+var numeridagenerare = parseInt(prompt("quanti numeri vuoi generare?"));
+var generati = [];
+
+if (isNaN(numeridagenerare) == false) {
+  for (var i = 0; i < numeridagenerare; i++) {
+
+    generati.push(i+1) ;
+
+    // listanum.innerHTML = "";
+
+    if  (i % 3 == 0 && i % 5 == 0) {
+      console.log("fixbuz");
+    }
+
+    else if (i%3 == 0) {
+      console.log("fix");
+    }
+
+    else if (i%5== 0) {
+      console.log("buzz");
+    }
+
+    document.getElementById("lista").innerHTML += "<li>" + generati[i] + "</li>";
+
+    }
+} else {
+  alert("non hai digitato un numero");
+  var numeridagenerare = parseInt(prompt("quanti numeri vuoi generare?"));
+  for (var i = 0; i < numeridagenerare; i++) {
+
+    generati.push(i+1) ;
+
+    // listanum.innerHTML = "";
+
+    if  (i % 3 == 0 && i % 5 == 0) {
+      console.log("fixbuz");
+    }
+
+    else if (i%3 == 0) {
+      console.log("fix");
+    }
+
+    else if (i%5== 0) {
+      console.log("buzz");
+    }
+
+    listanum.innerHTML += "<li>" + generati[i] + "</li>";
+
+    }
+}
+    console.log(generati);
